@@ -1,18 +1,78 @@
 <!DOCTYPE html>
-<html>
-    <head>
-<title>Michael Vanden Heuvel</title>
-    </head>
-    <body style="background-color:cornsilk">
-        <header>Michael Vanden Heuvel's Personal Website</header>
-<img src="images/Profile Picture.jpeg" alt="My picture" height="256">
-<p>My name is Michael Vanden Heuvel. I am a Junior Computer Science student at UW Madison.
-<br /> This site is still being worked on</p>
-<!-- 
+<html lang="en">
 
-I'll work on this site more in the future
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="maps, cartography"/>
+	<title>Michael Vanden Heuvel</title>
 
-<a href="index.html">This is the other stuff i worked on</a>
---> 
-    </body>
+    <!--put your Bootstrap stylesheet links below this comment and above style.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- Create the navbar -->
+	<nav class="navbar navbar-expand-md navbar-default">  
+        <!-- Container inside the navbar header to span the page -->
+		<div class="container"> 
+            <!-- Creates the navbar header -->
+			<div class="navbar"> 
+                <!-- This complex script is just for a hamburger button -->
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-header" aria-expanded="false" aria-controls="navbar-header">
+                    <span class="sr-only">Toggle navigation</span>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" /></svg>
+                    <span class="menu"> Menu</span>
+                </button> 
+				<!-- Offset homepage nav persistent on smallscreens -->
+				<a class="navbar-brand" href="#">Michael Vanden Heuvel</a>
+            </div>
+			<!-- Links expanded on larger screens  -->
+            <div id="navbar-header" class="collapse navbar-collapse">
+                <!-- Links to include in navbar -->
+                <ul class="nav navbar-nav">
+                    <!-- Unordered list for links on navbar -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                </ul>
+            </div> <!-- end .navbar-collapse -->
+        </div> <!-- end .container -->
+    </nav> <!-- end navigation bar -->    
+
+    <div class="jumbotron">
+        <div class="container">
+            <h2>Michael Vanden Heuvel</h2>
+            <p>I like programming and taking pictures</p>
+        </div>
+    </div>
+	
+    <div class="container" id="about">
+        <h2>About</h2>
+        <p></p>
+    </div>
+
+    <div class="container">
+        <h2>Personal Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="portfolio/virtualtours.html">
+						<img class="card-img-top" src="images/virtualtours.gif" alt="Virtual Tour App" width="800">
+					</a>
+                        <a href="portfolio/virtualtours.html" class="overlay">
+						<div class="text">College Tours App</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--put your external script links here-->
+    <script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+</body>
+
 </html>

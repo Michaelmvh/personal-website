@@ -1,0 +1,167 @@
+/* nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    text-decoration: none;
+}
+
+nav li{
+    float: left;
+    margin: 0;
+}
+
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+nav li a:hover{
+    background-color: #2c7fb8;
+}
+
+.header{
+    display: block;
+}
+
+#profile-pic{
+    max-width: 10%;
+    border-radius: 50%;
+} */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #0a2263; 
+  }
+  
+  .card:hover .overlay {
+    opacity: .75;
+  }
+
+  /***** NAVBAR *****/
+
+.navbar {
+    background-color: #333;
+    /* border-radius: 0; */
+}
+
+/* Navbar title */
+.navbar-default .navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+/* Navbar hover effects */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ebd122;
+    text-decoration: none;
+}
+
+/* Navbar links */
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Navbar collapsed styles */
+.navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    background-color: #863ee3;
+    border-radius: 4px;
+    border: 1px solid;
+    fill: #fff;
+    font-size: 16px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: #ebd122;
+    color: #242424;
+    fill: #242424;
+    border-color: #fff;
+
+}
+
+/*** JUMBOTRON ***/
+
+.jumbotron {
+    background-image: url("../assets/contour-lines.png");
+    text-align: center;
+    color: #fff;
+    padding: 3%;
+    border-radius: 0px;
+}
+
+.jumbotron h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/*** CARD ***/
+
+/* .card {
+    background-color: #fff;
+    border-color: #cccccc;
+    border-width: 1px;
+    width: 100%;
+}
+
+.card:hover {
+    border-color: #ebd122;
+} */
+
+/*** Basic Text Styles ***/
+
+#about-world {
+    max-height: 200px;
+}
+
+.resume h3 {
+    font-weight: bold;
+}
+
+
+hr {
+    border-color: white;
+    border-width: 2px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: #863ee3;
+}
+
+a:hover {
+    color: #ebd122;
+}
+
+body {
+
+    font-family: 'Helvitica', sans-serif;
+    background-color: #f7f1fa;
+    color: #242424;
+}
+
+#profile-pic{
+    max-width: 10%;
+    border-radius: 50%;
+}
